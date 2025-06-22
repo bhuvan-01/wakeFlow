@@ -1,8 +1,8 @@
 export default function handler(req, res) {
   if (req.method === 'GET') {
     res.json({
-      name: "base64Encode",
-      description: "Encode anything to base64",
+      name: "base64EncodeBhuvan",
+      description: "Encode anything to base64 - Bhuvan's version",
       input: {
         type: "string",
         description: "Input the data you'd like to encode to base64",

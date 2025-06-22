@@ -16,11 +16,9 @@ export default function handler(req, res) {
     });
   } else if (req.method === 'POST') {
     const { input } = req.body;
-
     if (!input || typeof input !== 'string') {
       return res.status(400).json({ error: 'Missing or invalid input' });
     }
-
     const output = Buffer.from(input).toString('base64');
     res.json({ output });
   } else {
